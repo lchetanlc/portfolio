@@ -138,7 +138,7 @@
 
         .home {
             display: flex;
-            background: url("1.jpg") no-repeat right;
+            background: url("lc.jpg") no-repeat right;
             background-origin: right;
             height: 110vh;
             color: #fff;
@@ -232,6 +232,7 @@
         .about .about-heading h1 {
             font-size: 50px;
             font-family: 'Ubuntu', sans-serif;
+            
         }
 
         .about .about-heading h4 {
@@ -271,7 +272,10 @@
             padding: 80px;
             width: 600px;
             text-align: justify;
-            line-height: 1.2;
+            line-height: 1.6;
+        }
+        .about-right h1{
+            margin-bottom: 20px;
         }
 
         @media(max-width:700px) {
@@ -283,6 +287,12 @@
             .about-right {
                 width: auto;
                 padding: 0%;
+            }
+            .about-right h1{
+                margin-top: 20px;
+            }
+            .about-right{
+                text-align: justify;
             }
 
 
@@ -430,6 +440,7 @@
             .skills-content {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
             }
 
             .skills-content-left {
@@ -437,6 +448,9 @@
                 text-align: justify;
                 margin-top: 30px;
                 margin: 0%;
+            }
+            .skills-content-right{
+                column-gap: 0;
             }
         }
 
@@ -575,24 +589,31 @@ margin-right: 5px;
                 
             }
             .input-sub{
-                width: 280px;
+                width: 250px;
             }
             .input-message{
-                width: 280px;
+                width: 250px;
             }
             .input-email{
                 margin-top: 10px;
-                width: 280px;
+                width: 250px;
             }
             .input-name{
-                width: 280px;
+                width: 250px;
             }
             .form{
                 justify-content: center;
             }
            .form-main{
-               width: 100%;
-               margin: auto;
+              
+               text-align:center ;
+           }
+           .form-heading h2{
+               text-align: center;
+           }
+           .submit-btn{
+               display: flex;
+               justify-content: center;
            }
         }
     </style>
